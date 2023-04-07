@@ -51,7 +51,7 @@ class JUNGFRAU_EuXFEL(Detector):
         self.MAX_SHAPE = (n_modules*512, 1024)
         super().__init__(pixel1, pixel2, **kwargs)
 
-def EPIX10K2M(Detector):
+class EPIX10K2M(Detector):
     IS_CONTIGUOUS = FALSE
     MAX_SHAPE = (16*352, 384)
 
